@@ -1,5 +1,6 @@
 # GA Maze Robot
 *Created by Josh Rickert for CSE 231 at Michigan State University, Spring 2010*
+
 *Updated for Python 3.4.0*
 
 This script uses a genetic algorithm to teach a 'robot' to navigate a 'maze' (provided by a text file). The robot has a location, facing, and sensor values. It can move forward, left or right. Each robot has a Braitenberg matrix genome that parses its sensor input into instructions to move. The successful robot will follow a breadcrumb trail 'b' to a goal point 'F'.
@@ -11,10 +12,13 @@ The default parameters for the simulation are optimized for a successful navigat
 
 ## Algorithm:
 Three main classes:
+
 1. GA() maintains the population of individuals and simulates their interactions.
 2. Individual() represents a single individual and an instance of its environment.
 3. World() is imported and represents the environmental simulation for a single individual.
+
 During the simulation, for each generation:
+
 1. Create the offspring by choosing fit parents and crossing their genes
 2. Mutate the offspring at user-determined rates
 3. Add the offspring to the main population
