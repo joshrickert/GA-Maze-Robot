@@ -52,11 +52,11 @@ class World(object):
                 for char in row:
                         if self.agent_location[0] == rowNum and \
                            self.agent_location[1] == colNum:
-                                print 'A \t',
+                                print ('A \t',)
                         else:
-                                print char, '\t',
+                                print (char, '\t',)
                         colNum += 1
-                print '\n'
+                print ('\n')
                 rowNum += 1
 			
 
@@ -67,7 +67,7 @@ class World(object):
                     loc[0] > len(self.world[0]) or   \
                     loc[1] < 0 or    \
                     loc[1] > len(self.world):
-                            print "Bad query: ", loc[0], " ", loc[1], " is not defined."
+                            print ("Bad query: ", loc[0], " ", loc[1], " is not defined.")
                             return "-1"
             else:
                     return self.world[loc[0]][loc[1]]
@@ -149,7 +149,7 @@ class World(object):
             elif newFacing == 3:
                     newLocation = (newLocation[0], newLocation[1]-1)
             else:
-                    print "Bad direction: ", direction
+                    print ("Bad direction: ", direction)
 
             if self.queryWorldLocation(newLocation) != "-1" \
                and self.queryWorldLocation(newLocation) != "x" :
