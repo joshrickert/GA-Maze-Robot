@@ -1,0 +1,14 @@
+dim	13	
+x	x	x	x	x	x	x	x	x	x	x	x
+x	-	b	b	-	-	-	-	-	-	-	x
+x	-	-	b	b	-	-	-	-	-	-	x
+x	-	-	-	b	-	-	-	-	-	-	x
+x	-	-	b	b	-	-	-	-	-	-	x
+x	-	-	b	-	-	-	-	-	-	-	x
+x	-	-	b	b	-	-	-	-	-	-	x
+x	-	-	-	b	b	b	b	-	-	-	x
+x	-	-	-	-	-	-	b	-	-	-	x
+x	-	-	-	-	-	b	b	-	-	-	x
+x	-	-	-	-	-	b	-	-	-	-	x
+x	-	-	-	-	-	b	b	b	b	F	x
+x	x	x	x	x	x	x	x	x	x	x	x
