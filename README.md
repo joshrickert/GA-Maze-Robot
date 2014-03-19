@@ -1,6 +1,7 @@
 GAMazeRobot
 ===========
 *Created by Josh Rickert for CSE 231 at Michigan State University, Spring 2010*
+*Updated for Python 3.4.0*
 
 This script uses a genetic algorithm to teach a 'robot' to navigate a 'maze' (provided by a text file). The robot has a location, facing, and sensor values. It can move forward, left or right. Each robot has a Braitenberg matrix genome that parses its sensor input into instructions to move. The successful robot will follow a breadcrumb trail 'b' to a goal point 'F'.
 
