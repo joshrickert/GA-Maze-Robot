@@ -192,38 +192,38 @@ class GA():
    
 def runGA():
     "Gets all GA parameters as user input and then runs it. No error checking!"
-    popSize = raw_input("GA Population Size (Default 200):")
+    popSize = input("GA Population Size (Default 200):")
     if not popSize:
         popSize = 200
     else:
         popSize = int(popSize)
-    offspringPopSize = raw_input("GA Offspring Population Size (Default 50):")
+    offspringPopSize = input("GA Offspring Population Size (Default 50):")
     if not offspringPopSize:
         offspringPopSize = 50
     else:
         offspringPopSize = int(offspringPopSize)
-    mutOffspring = raw_input("Percent of offspring to mutate (Default 50):")
+    mutOffspring = input("Percent of offspring to mutate (Default 50):")
     if not mutOffspring:
         mutOffspring = 50.0
     else:
         mutOffspring = float(mutOffspring)
-    mutBit = raw_input("Probability of a bit's mutation (Default 25):")
+    mutBit = input("Probability of a bit's mutation (Default 25):")
     if not mutBit:
         mutBit = 25.0
     else:
         mutBit = float(mutBit)
-    generations = raw_input("Number of generations (Default 20):")
+    generations = input("Number of generations (Default 20):")
     if not generations:
         generations = 20
     else:
         generations = int(generations)
-    worldName = raw_input("Name of world file for simulation (Default 'world1.txt'):")
+    worldName = input("Name of world file for simulation (Default 'world1.txt'):")
     if not worldName:
         worldName = "world1.txt"
-    outFile = raw_input("Name of output file (Default 'GARun.txt')")
+    outFile = input("Name of output file (Default 'GARun.txt')")
     if not outFile:
         outFile = "GARun.txt"
-    raw_input("Press enter to start the simulation.")
+    input("Press enter to start the simulation.")
     sim = GA(popSize,offspringPopSize,mutOffspring,mutBit,worldName)
     sim.run(generations,outFile)
     
