@@ -52,9 +52,9 @@ class World(object):
                 for char in row:
                         if self.agent_location[0] == rowNum and \
                            self.agent_location[1] == colNum:
-                                print ('A \t',)
+                                print ('A \t', end="")
                         else:
-                                print (char, '\t',)
+                                print (char, '\t', end="")
                         colNum += 1
                 print ('\n')
                 rowNum += 1
