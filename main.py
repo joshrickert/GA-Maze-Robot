@@ -25,9 +25,9 @@ class Individual():
         self.worldname = worldname
         self.env = world.World(worldname)
         self.fitnessRecent = False
-    def __cmp__(self,other):
+    def __lt__(self, other):
         "Compare this individual to another by fitness."
-        return cmp(self.fitness, other.fitness)
+        return self.fitness < other.fitness
     def __repr__(self):
         "Represent this individual."
         return self.__str__()
