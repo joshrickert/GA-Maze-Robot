@@ -1,4 +1,4 @@
-GAMazeRobot
+GA Maze Robot
 ===========
 *Created by Josh Rickert for CSE 231 at Michigan State University, Spring 2010*
 *Updated for Python 3.4.0*
